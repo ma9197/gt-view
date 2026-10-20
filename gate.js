@@ -40,15 +40,15 @@
     unlock(v).then(function (creds) {
       try { localStorage.setItem(KEY, JSON.stringify(creds)); } catch (e) {}
       app.innerHTML = ""; boot(creds);
-    }, function () { busy = false; msg.textContent = "Wrong password"; pw.focus(); });
+    }, function () { busy = false; pw.value = ""; msg.textContent = "Wrong password"; pw.focus(); });
   }
+  // glasses: Enter on the box opens the composer, which fires "change" when done (no per-key events)
   pw.addEventListener("change", tryIt);
   go.addEventListener("click", tryIt);
   document.addEventListener("keydown", function (e) {
     if (!document.getElementById("pw")) return; // unlocked, app.js owns the keys now
     if (e.key === "ArrowDown") { e.preventDefault(); go.focus(); }
     else if (e.key === "ArrowUp") { e.preventDefault(); pw.focus(); }
-    else if (e.key === "Enter" && e.target === pw && pw.value) { e.preventDefault(); tryIt(); }
   });
   pw.focus();
 })();
