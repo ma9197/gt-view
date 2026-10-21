@@ -9,7 +9,7 @@
     A YouTube Data API v3 key. Only needed for "Browse without signing in".
 */
 window.GT_CONFIG = {
-  ENC: {"iter":600000,"salt":"MVkR4KdFyjUfUVhygSo7jg==","iv":"x8HJO9IZtRh2F2e/","data":"mosGoPuaxC0qd5fKsGG/iQpbrR5sAgmvRRBzSw6iCYwyE9jN9Vhp/ASC77rjRHCIoEoAzgy6w1E2CL2PfEc8Qa6eqMuinsmbhgocwxJ8ER46vA9VLyDE565VCVYsooXrdU6Fhk3oNLMxyXqv7eptS0JHjj5qje3pKHrb0YtsXV3mp+CXR8QT++y7mstMJUsegN7xX/FlgmL+8HX3HbU="},
+  ENC: {"iter":600000,"salt":"USJbsCrcQKrfsFPpnxb4wA==","iv":"qYlqegcr/2ZpeUYV","data":"gQDxubefBq/QPLt1xbIvyFXUzt+ER/0xh6GpNfG3XXukrocN32Wr2WigFiLGcj5copKg6FOsrIX1/kcAv6CR5DR59hi6PxrWL9aSCgwEm/SPNoGV1Ie3ubyRXO23YLn7D8iyDXgAb/BAL0/bPaT3kDZlfRsHpW0L3oUKlV0mBKWOqDYV3y7mYF7KafMdJzMGcR8F5ojdtihSR2MDU/o="},
   API_KEY: "",
 
   REGION: "GB",          // default Trending region (changeable in Settings)
